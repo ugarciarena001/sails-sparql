@@ -1,0 +1,42 @@
+{
+  "name": "waterline-sails-sparql",
+  "version": "0.10.0",
+  "description": "sails-sparql adapter for Sails / Waterline",
+  "main": "lib/adapter.js",
+  "scripts": {
+    "_test": "mocha --reporter spec",
+    "test": "node test/integration/runner -R spec -b"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/balderdashy/waterline-%s.git"
+  },
+  "keywords": [
+    "sails-sparql",
+    "adapter",
+    "sails",
+    "waterline",
+    "sails.js",
+    "plugin"
+  ],
+  "author": "balderdashy",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "shortid": "^2.0.1",
+    "stardog": "*"
+  },
+  "devDependencies": {
+    "captains-log": "~0.11.0",
+    "expect": "^0.1.1",
+    "mocha": "*",
+    "waterline-adapter-tests": "~0.10.0"
+  },
+  "waterlineAdapter": {
+    "type": "sails-sparql",
+    "interfaces": [
+      "semantic"
+    ],
+    "waterlineVersion": "~0.10.0"
+  }
+}
